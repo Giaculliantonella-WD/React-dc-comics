@@ -1,7 +1,11 @@
 import logo from '../assets/img/dc-logo.png';
 import headerLinks from '../data/headerLinks';
 
-function AppHeader() {
+function AppHeader(props) {
+
+    const sottologo = props.sottologo
+
+
     return (
         <header className="app-header">
             <div className="container header-container">
@@ -9,6 +13,7 @@ function AppHeader() {
                     <a href="#">
                         <img src={logo} alt="DC Comics Logo" />
                     </a>
+                    <p>{sottologo}</p>
                 </figure>
 
                 <nav className="header-nav">

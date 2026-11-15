@@ -63,8 +63,16 @@ button {
   transition: transform 0.2s ease;
 }
 
-.header-logo img:hover {
+.header-logo img:hover p {
   transform: scale(1.05);
+}
+
+.header-logo p {
+  color: #1c1c1c;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+
 }
 
 .header-nav {
